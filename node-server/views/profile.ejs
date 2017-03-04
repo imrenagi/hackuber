@@ -11,9 +11,16 @@
                 background: #000;
                 font-family: Arial, Helvetica, sans-serif;
             }
-            img{
-                width: 150px;
-                margin: 30px 0px;
+            .logo{
+                width: 80px;
+                margin: 20px auto 10px;
+            }
+
+            .avatar{
+                margin: 20px auto;
+                width: 200px;
+                border-radius: 0.275rem;
+                box-shadow: 5px 8px 20px 0px rgba(0,0,0,0.15);
             }
             button {
                 background: white;
@@ -33,16 +40,19 @@
                 opacity: 0.95;
             }
             .profile{
+                line-height: 1.5rem;
                 color: white;
             }
         </style>
     </head>
     <body>
-        <img src="http://i.imgur.com/4Yk27sG.png">
+        <img class="logo" src="http://i.imgur.com/4Yk27sG.png">
         <br/>
-        <img src="<%=picture%>"/>
+        <img class="avatar" src="<%=picture%>"/>
         <div class="profile">
-            <%=first_name%>, <%=last_name%>
+            Hey <%=first_name%>
+            <br/>
+            You are now logged in!
         </div>
     </body>
 </html>
