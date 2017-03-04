@@ -5,7 +5,7 @@ const app = express();
 const twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 import Uber from 'node-uber';
 import unirest from 'unirest';
-
+// import request from 'request';
 app.get('/', (req, res)=>res.send('use endpoint/api'))
 let DB = {};
 
@@ -13,6 +13,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.get('/api', (req, res)=>{
     res.render('login');
+})
+
+app.get('/action', (req, res)=>{
+    res.render('action');
 })
 
 app.get('/api/sms', (req, res)=>{
@@ -76,11 +80,37 @@ app.get('/api/profile', (req, res) => {
 
     request.end(function (response) {
         if (response.error) throw new Error(res.error);
+        console.log(DB)
         res.render('profile', response.body);
     });
-    
-
 });
+
+app.post('/api/webhook', (req, res) => {
+    console.log('webhook');
+     res.send()
+});
+
+app.post('/api/request', (req, res) => {
+    var request = unirest("POST", "https://sandbox-api.uber.com/v1.2/requests");
+
+    request.headers({
+    "authorization": `Bearer ${DB.access_token}`,
+    "content-type": "application/json"
+    });
+
+    request.type("json");
+    request.send({
+        "product_id": "a1111c8c-c720-46c3-8534-2fcdd730040d",
+        "start_latitude": req.query.lat,
+        "start_longitude": req.query.long,
+        "end_latitude": 37.775393,
+        "end_longitude": -122.417546
+    });
+
+    request.end(function (res) {
+        console.log(res.body);
+    });
+})
 
 const PORT = 8001;
 app.listen(process.env.PORT||PORT, err => console.log(err || `->Listening on ${process.env.PORT || PORT}`));

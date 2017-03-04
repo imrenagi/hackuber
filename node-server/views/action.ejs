@@ -4,6 +4,7 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <style>
             body{
                 text-align: center;
@@ -45,13 +46,29 @@
         </style>
     </head>
     <body>
-        <img class="logo" src="http://i.imgur.com/4Yk27sG.png">
+        <img class="logo" src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.2.20/d1a3f4spazzrp4.cloudfront.net/images/uber-serp-logo-f6e7549c89.jpg">
         <br/>
-        <img class="avatar" src="<%=picture%>"/>
         <div class="profile">
-            Hey <%=first_name%>
-            <br/>
-            You are now logged in!
+            <h2>Start a trip?</h2>
         </div>
+        <button onclick="request()">Request a sandUber</button>
+
+        <script>
+            let linkURI;
+            navigator.geolocation.getCurrentPosition(function(position) {
+                if(position){
+                    var coords = document.createElement('div');
+                    coords.innerHTML = JSON.stringify(position.coords);
+                    document.body.appendChild(coords);
+                }
+                linkURI = `/api/request?lat=${position.coords.latitude}&long=${position.coords.longitude}`;
+            })
+            function request(){
+                console.log(linkURI)
+                $.post(linkURI, function(err, res){
+                    console.log(res.data)
+                })
+            }
+        </script>
     </body>
 </html>
