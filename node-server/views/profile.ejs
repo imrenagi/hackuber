@@ -31,11 +31,17 @@
             button:active{
                 opacity: 0.95;
             }
+            .profile{
+                color: white;
+            }
         </style>
     </head>
     <body>
         <img src="http://i.imgur.com/4Yk27sG.png">
         <br/>
-        <a href='/api/login'><button>Login with Uber</button></a>
+        <img src="<%=picture%>"/>
+        <div class="profile">
+            <%=first_name%> <%=last_name%>
+        </div>
     </body>
 </html>
