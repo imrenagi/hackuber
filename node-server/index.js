@@ -88,7 +88,20 @@ app.get('/api/profile', (req, res) => {
 
 app.post('/api/webhook', (req, res) => {
     console.log('webhook');
-     res.send()
+    const receiver_num = req.query.number || '14152035874';
+    const receiver_name = req.query.name || 'Amazingandyyy';
+    twilio.sendMessage({
+        to: receiver_num,
+        from: process.env.TWILIO_NUMBER,
+        body: `Hi ${receiver_name}, check this ads - https://uberadss.herokuapp.com/video for 350 points.`
+    }, function(err, good){
+        if (err) {
+            console.log('err when send twilio SMS: ', err);
+            return res.status(500).send('fail to send')
+        }
+        console.log(`send message to ${receiver_num}`)
+        res.status(200).send();
+    })
 });
 
 app.post('/api/request', (req, res) => {
