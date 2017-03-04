@@ -1,0 +1,30 @@
+{
+  "name": "uberads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node-server/index.js",
+  "scripts": {
+    "start": "babel-watch node-server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imrenagi/hackuber.git"
+  },
+  "keywords": [
+    "uber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imrenagi/hackuber/issues"
+  },
+  "homepage": "https://github.com/imrenagi/hackuber#readme",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.2.0",
+    "babel-watch": "^2.0.6",
+    "express": "^4.15.0"
+  }
+}
