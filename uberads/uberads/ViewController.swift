@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import UberRides
+
+@IBOutlet weak var logoutButtonBgView: UIView!
+
+var uberScopes: [RidesScope]?
+var uberLoginManager: LoginManager?
+var uberLoginButton: LoginButton?
 
 class ViewController: UIViewController {
 
