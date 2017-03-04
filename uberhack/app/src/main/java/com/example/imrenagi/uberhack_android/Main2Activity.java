@@ -25,6 +25,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        // closeButton
         final ImageView closeButton = (ImageView) findViewById(R.id.closeButton);
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override
