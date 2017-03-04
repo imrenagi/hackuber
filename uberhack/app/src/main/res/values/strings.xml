@@ -11,4 +11,6 @@
     <string name="title_activity_oauth">OAuthActivity</string>
 
     <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_alert">AlertActivity</string>
+    <string name="title_activity_cards">CardsActivity</string>
 </resources>

@@ -17,6 +17,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.example.imrenagi.uberhack_android.model.Ads;
+import com.example.imrenagi.uberhack_android.model.AlertActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -106,7 +107,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_manage) {
-
+            Intent intent = new Intent(this, AlertActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            this.startActivity(intent);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

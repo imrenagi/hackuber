@@ -17,6 +17,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,32 +30,29 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="uberadss.herokuapp.com"
                     android:pathPrefix="/video"
                     android:scheme="https" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".AuthActivity"
             android:label="@string/title_activity_auth"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".OAuthActivity"
             android:label="@string/title_activity_oauth"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Main3Activity"
             android:label="@string/title_activity_main3"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".model.AlertActivity"
+            android:label="@string/title_activity_alert"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
