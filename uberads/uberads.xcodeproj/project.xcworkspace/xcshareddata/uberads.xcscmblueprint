@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DC60538F-02C0-4916-A479-7B4EE4F25553",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "uberads",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "uberads\/uberads.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/imrenagi\/hackuber.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/imrenagi\/hackuber.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6"
+    }
+  ]
+}
