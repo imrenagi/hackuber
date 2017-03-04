@@ -20,12 +20,12 @@ app.get('/action', (req, res)=>{
 })
 
 app.get('/api/sms', (req, res)=>{
-    const receiver_num = req.query.number;
-    const receiver_name = req.query.name;
+    const receiver_num = req.query.number || 4152035874;
+    const receiver_name = req.query.name || 'Amazingandyyy';
     twilio.sendMessage({
         to: receiver_num,
         from: process.env.TWILIO_NUMBER,
-        body: `Hi ${receiver_name}`
+        body: `Hi ${receiver_name}, check this ads - https://uberadss.herokuapp.com/video for 350 points.`
     }, function(err, good){
         if (err) {
             console.log('err when send twilio SMS: ', err);
