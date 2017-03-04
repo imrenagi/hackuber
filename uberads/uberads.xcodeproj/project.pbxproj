@@ -12,9 +12,12 @@
 		A4D994D61E6A9266005FC23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D994D41E6A9266005FC23E /* Main.storyboard */; };
 		A4D994D81E6A9266005FC23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D994D71E6A9266005FC23E /* Assets.xcassets */; };
 		A4D994DB1E6A9266005FC23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D994D91E6A9266005FC23E /* LaunchScreen.storyboard */; };
+		D6DBE14B85E18AA9F3C7E1FD /* Pods_uberads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03573D23CF89FC00890ED035 /* Pods_uberads.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03573D23CF89FC00890ED035 /* Pods_uberads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uberads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F740D0ECC63D8F764C77000 /* Pods-uberads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberads.release.xcconfig"; path = "Pods/Target Support Files/Pods-uberads/Pods-uberads.release.xcconfig"; sourceTree = "<group>"; };
 		A4D994CD1E6A9266005FC23E /* uberads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uberads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D994D01E6A9266005FC23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4D994D21E6A9266005FC23E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A4D994D71E6A9266005FC23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4D994DA1E6A9266005FC23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4D994DC1E6A9266005FC23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E30CE1BB6CCA93D46CE8E0C0 /* Pods-uberads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uberads/Pods-uberads.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DBE14B85E18AA9F3C7E1FD /* Pods_uberads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09445976BB1D7A2D6ACBBD2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03573D23CF89FC00890ED035 /* Pods_uberads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7520C9A6F4B220AEB06381C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E30CE1BB6CCA93D46CE8E0C0 /* Pods-uberads.debug.xcconfig */,
+				0F740D0ECC63D8F764C77000 /* Pods-uberads.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A4D994C41E6A9266005FC23E = {
 			isa = PBXGroup;
 			children = (
 				A4D994CF1E6A9266005FC23E /* uberads */,
 				A4D994CE1E6A9266005FC23E /* Products */,
+				7520C9A6F4B220AEB06381C3 /* Pods */,
+				09445976BB1D7A2D6ACBBD2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4D994DF1E6A9266005FC23E /* Build configuration list for PBXNativeTarget "uberads" */;
 			buildPhases = (
+				4675B44EC51C17DB8037FAD9 /* [CP] Check Pods Manifest.lock */,
 				A4D994C91E6A9266005FC23E /* Sources */,
 				A4D994CA1E6A9266005FC23E /* Frameworks */,
 				A4D994CB1E6A9266005FC23E /* Resources */,
+				12661314A08BB30C42EA0DCD /* [CP] Embed Pods Frameworks */,
+				F4DD70B7C2B35857E33B376E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12661314A08BB30C42EA0DCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uberads/Pods-uberads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4675B44EC51C17DB8037FAD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4DD70B7C2B35857E33B376E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uberads/Pods-uberads-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4D994C91E6A9266005FC23E /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		A4D994E01E6A9266005FC23E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30CE1BB6CCA93D46CE8E0C0 /* Pods-uberads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;
@@ -270,6 +346,7 @@
 		};
 		A4D994E11E6A9266005FC23E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F740D0ECC63D8F764C77000 /* Pods-uberads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6L7FGM9UX;

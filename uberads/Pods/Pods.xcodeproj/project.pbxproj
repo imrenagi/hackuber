@@ -1,0 +1,1072 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061E260A9DBDC75888ABFB24144AD170 /* RideParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA966518B94703D4A439B4731ABE1DD /* RideParameters.swift */; };
+		0748B1D28DA58A679B03A6140A7389F2 /* AuthorizationCodeGrantAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5661F8A1630683009C693CDB8DB7F /* AuthorizationCodeGrantAuthenticator.swift */; };
+		0EDEE51821996B3159B5D07EF5AFE8E1 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62A7E8EF6B408A75EBA44FB52A0A025 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0FE044F0C1960CAD585819C1ADA66BC0 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345D24DB53F811EC533CD316F88F9E4 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1C5FD9351A887E00795020DBE6C345E3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A0EC4A6026C1CE6CB338A7BB43728E /* Media.xcassets */; };
+		21CF35299E7494A1E4D4E4D068B771F1 /* RideRequestViewRequestingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CA41DDAF0C398D3A6EDB066893AD0 /* RideRequestViewRequestingBehavior.swift */; };
+		2407248E02F3466FFE16BD0B0464B7F3 /* LoginViewAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FA482E4F4114CC2E95D315857EF82 /* LoginViewAuthenticator.swift */; };
+		253DD75073489E47A4ADD480A5B25FA1 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B45EF1D3631F47399F071856737EEB /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E6D4C1FEFC7D87D7B0C6C2CD905938D /* RideRequestDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E81AEB74C2079E21FEB8D1B1D93A16 /* RideRequestDataBuilder.swift */; };
+		33B8E9C65925605715329289E41F570D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53E727F5F3DCA86DDE34247B20963F /* Configuration.swift */; };
+		359E3DC8F905A85D1F2B00FA4CDE24D2 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE80DD360E2D28833407A71E6E0C4B /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		380A8C72C24DF58647F6F83FDC4FC5C7 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27574F2AACB70363ED8E008CD22C72A8 /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A668F082FAE5BA896F5967998C8ACD5 /* RideCharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DD03A86D7BC9727E7ED4D6AA222DD1 /* RideCharge.swift */; };
+		3B82A788149206D762FC3C3E076D07A5 /* UberAuthenticatingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277BD78F7D5F90472C0B3D1D2635C1B8 /* UberAuthenticatingProtocol.swift */; };
+		3ED00FBE051ECA362602622B35DEE74F /* UberRides-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C75B91525C0742FEC7C29AD13D9A51A /* UberRides-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B283169942280A3824738535AD13DF /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515BB24BCB558A6C6816DC6C1C97492C /* ObjectMapper.framework */; };
+		4D87D70F1C04E1CB04931A0B825EF4EB /* hi-In.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CF8EA94989578D5DE4D513C3311FD5B9 /* hi-In.lproj */; };
+		564660E6549E27C80E379319485258A8 /* DeeplinkRequestingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A1D3BD87A9258B557CD014BC8E58B /* DeeplinkRequestingBehavior.swift */; };
+		57080AB5B3ABADECEFD48E91236C41B0 /* BaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75F8FC14423D50AF98193E311B2001 /* BaseAuthenticator.swift */; };
+		573031EF4CFFD5E87A6031C7208E8F33 /* RideMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24F14B106A6FBCE7B45087C6473B79 /* RideMap.swift */; };
+		5732560C243618A35AF574BE6CE602A7 /* NSDataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56331D0E09090585E5D366D93B6717E3 /* NSDataTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5BB103EE5ED585C7F46B8D24C9BF2BA7 /* AccessTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6BAA1F68451219B1F1DAEBF2C1DAD /* AccessTokenFactory.swift */; };
+		5D3502D0DCCAF77B966327E33E520077 /* DistanceEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D266E84F2D46E913779A30E6D91B9 /* DistanceEstimate.swift */; };
+		5F49066AFDDF941F2C844FE6E7BA5CEF /* Pods-uberads-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5850A763256B25818611532B17C87DB9 /* Pods-uberads-dummy.m */; };
+		6386D4405F35FDB8142B9EAD1262999D /* RideStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94465AD7B81CE9924DD04E4812E52B6C /* RideStatus.swift */; };
+		64EA70CC41B0AA1792F58B404EC28EB4 /* RideRequestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA59D022D47199D307F7957BB32CDE /* RideRequestButton.swift */; };
+		675C1FE1D87F83E6B8B141828EA78929 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04696331DA9C63B2F0F1E6B9550B9607 /* KeychainWrapper.swift */; };
+		68A7816B7323BA2B7776A0D9B11D3403 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97276B26CF4150FA013FB38F1BEC78CF /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		68D16D017198ACA0196A0CDB07F7BF51 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB752709830BFFD95B390DDAB6B66F /* AccessToken.swift */; };
+		6CF28DF0E4C05B39920479F1EAAD064F /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1717B4941A45370F78EEAAB149883 /* OAuthViewController.swift */; };
+		6DC07917BEFB097E8DEA096B0C81AB91 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA448F01A601DA08C5EF5E8CF11F1C8A /* Ride.swift */; };
+		6F656F1211579C804905DCF7220BA2E3 /* ImplicitGrantAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FB1F38F94E6BB473D90C942D5CEF16 /* ImplicitGrantAuthenticator.swift */; };
+		720635EF90E95A0C3A9BB4CACA031CF3 /* BaseDeeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393186636A2D52B718F7F8C165F40BBE /* BaseDeeplink.swift */; };
+		73F8EE90A6BF1002734577DFD59BA572 /* AuthenticationURLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F98916F5BFD9C5CA13BDB3943459D81 /* AuthenticationURLUtility.swift */; };
+		77883E2B727F8CB58645F717AB5AC070 /* RequestURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEF16FC4E95B0EC0A6D06D3DECE58F /* RequestURLBuilder.swift */; };
+		795D7C49C1F2C17C65A8680731AD9223 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB86875E8432CE4CF3B4513F18A30A /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D8A80DAE7B04FC6EF18977624DA3EB4 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6489414A98C1259503A43D705C3E1B55 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D9B250394859089BCDB86C54BCF61E7 /* Pods-uberads-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C40DE40E8CF9F0545BAB135124AB964F /* Pods-uberads-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8109651710079617E14EB611DD907404 /* NativeAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8AF81658CE80FB9CB2D52D9F50D1B /* NativeAuthenticator.swift */; };
+		82A0A70E959A76FA2BE1CD6A43EEC301 /* DeeplinkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0866BB6BB39BD7C5EC54D77B3375A307 /* DeeplinkErrorType.swift */; };
+		83A261AAEB26B69282554BA74021D41A /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC90BE44BABCA243453D65DEE69F53F /* ObjectMapper-dummy.m */; };
+		84BC1E84390918EE20DB43FBDB9A32EF /* RideRequestViewErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A6D803D631999BE28E24F28B61127 /* RideRequestViewErrorFactory.swift */; };
+		85CD017A5A2A9A1BF26B1BF88C43CA9E /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F03F30958AA5C128F05D4682D2A174 /* PaymentMethod.swift */; };
+		8A66948C486B1AD9A2DAF776073F7066 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB86453427A8E06E177E5A53A9CF3D2 /* Foundation.framework */; };
+		92A560B222EE1F3ED6D37A77D93B8A93 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4901FB06AF348E675F76DFC817E4C5A /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		98EFD8FFBF519218854ED12235132F90 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD3BC5379F97DE6604ABCD042BF550 /* ModelMapper.swift */; };
+		99F422158F92D1102306BBFFA4FE9328 /* DeeplinkErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123062963ABFDE9859367EFA59A04452 /* DeeplinkErrorFactory.swift */; };
+		A0355BE9E93F8691563B8172C4D55E5F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F967C2076D57F5E029216BDBBB48240D /* Place.swift */; };
+		A0BC383B55E9F20401DB7B16ED562512 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E8D4C1E722D3E77681DA5E58F24C5521 /* zh-Hant.lproj */; };
+		A3DEC562E879E9518A25ADC6BB6CEBE4 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01991820D3479E782424A6421A9B0593 /* ModalViewController.swift */; };
+		A55474F50802ABFAD11F7406E10EBBF3 /* RidesUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E40E91418A61CAF118C2EB595AB1D0 /* RidesUtil.swift */; };
+		A56CC6646069C7B73198B3BE44AD9A74 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF56553B1BAE67F3993C0300811A06 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A57AEFE9E5A79B08F86E955A618585ED /* RidesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FB8BA19ED40E687B37DC57F7FB09BE /* RidesError.swift */; };
+		A7EF84E8D496DA75234B4BBD8F30FD82 /* EndpointsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F325B9D280282DE00D04ABE666102C6E /* EndpointsManager.swift */; };
+		A96656AA5FF2215B958E9F7C97605EF4 /* RideReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05830B808BFF9D1BEBB56DE51E622B95 /* RideReceipt.swift */; };
+		AA99F5176C32D36DFEBEDC2F5B9DAD77 /* RideRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC41A8AA460219EC918F896CFA2206DC /* RideRequestLocation.swift */; };
+		AC4F84DF1F9018065E14AA5DDCA42E0B /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D61CBB385BDEE1CE37D3FE3E6D403A4A /* en.lproj */; };
+		AE4EFA1A2B88B67D259AF24542BF7D17 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8765DA19CF02FC9019AC38C93141A20A /* Vehicle.swift */; };
+		AEF94DFBB9919C31E71300AD0AD30621 /* ModalRideRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E559D2FD85FBF46C63DD80AF14B8BD4E /* ModalRideRequestViewController.swift */; };
+		B18FF89132C6CFCC820846DA6747FF07 /* RideRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D3AB7EC51C267B971A4526247AD48 /* RideRequestViewController.swift */; };
+		B46F49DDBB3450D494A3C006FFFFFDBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9396EAEBEE866165B730193D21C88C1 /* LoginView.swift */; };
+		B4842F0C032B3C12F1204869BF4A0516 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB86453427A8E06E177E5A53A9CF3D2 /* Foundation.framework */; };
+		B68132D888B201E06534B2FECC50722A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003277A4B599C11C914658F7F97E5BD5 /* LoginButton.swift */; };
+		BD97227F05E8D5E93CE8995F78C65774 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D72C81D9A8996E9CFCB30BB8189D23 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BDA8FF1778332D6CA65026D5F0B416A0 /* RideRequestingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3DE0B9BA6A67CEF7E9C077E061267 /* RideRequestingProtocol.swift */; };
+		BDC0FBBF421ACAE35DB7902DEB8141C7 /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD8E5C3E870477C333AA86B1AD327F /* RideRequestView.swift */; };
+		BDCA1316C6B7D0C346D4F83E527CC4CE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BCC0CE4D2B1E685206AAC2D94E4DF3 /* Request.swift */; };
+		BF4EAB57C0BE37F7EC78E840DD1ABF57 /* TimeEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2ADFC09492E1F12D30E0A1DA65794 /* TimeEstimate.swift */; };
+		C0C82B58C8AA2E360666F85C0F9FEA6D /* RidesScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10A36E6ED9FFC2D035DBC614688236C /* RidesScope.swift */; };
+		C5685300B9C4AA10EC4F3C9B8EE25851 /* UberProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180636AD9E13B5FF7CEEED8ADF33BCB /* UberProduct.swift */; };
+		C91F023CEDA78B58ECC32239BE041C56 /* AppStoreDeeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E65232E63536A8B1701B82B18FC33 /* AppStoreDeeplink.swift */; };
+		CDB5E1874C8F64A93AA051B4B723D0D1 /* PriceEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B750B62B785DBB8ABA220A38580B37 /* PriceEstimate.swift */; };
+		CFEAA4CF5331B5150BAC647F87E3843F /* RideRequestViewErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9F8251D96F193281C3BCD2A9B490A /* RideRequestViewErrorType.swift */; };
+		D5485551070ABDA0B024D4E8BBC79B4A /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16FDB1CBFAE8A5B9871037725FFC73B /* LoginManager.swift */; };
+		D56F7FB2A8C29FB5C4D988711E270980 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1427FC7876E748A2B69A71398BFBEC5 /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D66F9E15925F8887007C056ED59D8A99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB86453427A8E06E177E5A53A9CF3D2 /* Foundation.framework */; };
+		D8B7F967770C8FC1F29ED3F7A0F63A2A /* UberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD04F60C3DC933DB0CE5A65DDFB86562 /* UberButton.swift */; };
+		DA2013D20F8E7D862D7752525893DB20 /* RidesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B09168E6C3EC7AB0DCC6FE58766FF6 /* RidesClient.swift */; };
+		DA7F71068A2372AB1E15BE33814C13AA /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 901DC2EFE9F89B22CF9C862FDF30A865 /* zh-Hans.lproj */; };
+		DBD513D6F6EF4E5BE03C19FECC7B96FD /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C99BF527C8FC16A340DDE2BA50EF5 /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DC95C0B0B7F20E9A199AE03BF38D3BF9 /* RideEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354DFF1F70B867F39D2C26D266D0955 /* RideEstimate.swift */; };
+		DFFD9311FE9D1D6318120448DD3BB5DC /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA49389111583AD28ADB9901639940 /* TokenManager.swift */; };
+		E1021AACCEE3974FEC50E94E97F26CD9 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2571243FE2CACFF4D14098722B407F /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E3B620E5E79A4A1FABF977837F93045E /* LoginManagingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A127EC892FBB837FA85B1E7B02B3DA /* LoginManagingProtocol.swift */; };
+		E55375B167BAE7DCCE7F917D8CA9EAD2 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D64C59B221A809963FA75DDB8D47F2 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6052808AEE7FE244A2CD0BF85849B04 /* AuthenticationDeeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2E37CCBAD4E45CBACF7AFD64BCBB9C /* AuthenticationDeeplink.swift */; };
+		E6919C2B794522D0359CA188676E5D47 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B37B012225ED40B97A3B126422D9D /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E79E8B09AED150E18818DA55CFAD80DA /* UserActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B6C8B09DC028214BEC42F0F307F53 /* UserActivity.swift */; };
+		E814D212530FC60E00AC6F1EBD0090BC /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6F9A81B59FFC5EDDB6AAD2033A817 /* Driver.swift */; };
+		EA4B6FB573D879B7B753AECB127606C5 /* DeeplinkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D93DAFC3ACCE9B51BB8D65B5446A43F /* DeeplinkingProtocol.swift */; };
+		F07669756071A3163ABF981094E10E5D /* RequestDeeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A7B9D308CB882A45746C93567F95A /* RequestDeeplink.swift */; };
+		F079EDF04959B3ED5FAA786240556AA2 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10D75F190ACAD68AEEF1076A848569 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1A27D31430616C3CF888F32FEE4F852 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F1F92ECC5634677545BBC608F628B /* UserProfile.swift */; };
+		F314C0A3A2E00434B067C0AFF1835197 /* RidesAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7315ABE0BF4EB644842DDA240C894D3 /* RidesAppDelegate.swift */; };
+		FDE3F0091849572D9F709AC89139DC57 /* UberRides-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8562ABB5591603620FAADE6A07630DA /* UberRides-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFB7F03C676FBC6A98C3EAD918B8BF10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79AC84D50B0950C961C2D10C707AD38D;
+			remoteInfo = UberRides;
+		};
+		CC2284916379A1969F257A16D8262C9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A16CB0CB5FD49FD533BBC4F0A0C888;
+			remoteInfo = ObjectMapper;
+		};
+		F39E317AF93916DE162D4FD66D357587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A16CB0CB5FD49FD533BBC4F0A0C888;
+			remoteInfo = ObjectMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003277A4B599C11C914658F7F97E5BD5 /* LoginButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginButton.swift; path = source/UberRides/LoginButton.swift; sourceTree = "<group>"; };
+		01991820D3479E782424A6421A9B0593 /* ModalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = source/UberRides/ModalViewController.swift; sourceTree = "<group>"; };
+		01B750B62B785DBB8ABA220A38580B37 /* PriceEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriceEstimate.swift; path = source/UberRides/Model/PriceEstimate.swift; sourceTree = "<group>"; };
+		04696331DA9C63B2F0F1E6B9550B9607 /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = source/UberRides/OAuth/KeychainWrapper.swift; sourceTree = "<group>"; };
+		051A1D3BD87A9258B557CD014BC8E58B /* DeeplinkRequestingBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeeplinkRequestingBehavior.swift; path = source/UberRides/DeeplinkRequestingBehavior.swift; sourceTree = "<group>"; };
+		05830B808BFF9D1BEBB56DE51E622B95 /* RideReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideReceipt.swift; path = source/UberRides/Model/RideReceipt.swift; sourceTree = "<group>"; };
+		0866BB6BB39BD7C5EC54D77B3375A307 /* DeeplinkErrorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeeplinkErrorType.swift; path = source/UberRides/DeeplinkErrorType.swift; sourceTree = "<group>"; };
+		123062963ABFDE9859367EFA59A04452 /* DeeplinkErrorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeeplinkErrorFactory.swift; path = source/UberRides/DeeplinkErrorFactory.swift; sourceTree = "<group>"; };
+		1D6779630D279574BE82C4A0DB274AAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F2C99BF527C8FC16A340DDE2BA50EF5 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = ObjectMapper/Transforms/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		21DD03A86D7BC9727E7ED4D6AA222DD1 /* RideCharge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideCharge.swift; path = source/UberRides/Model/RideCharge.swift; sourceTree = "<group>"; };
+		2345D24DB53F811EC533CD316F88F9E4 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
+		271E65232E63536A8B1701B82B18FC33 /* AppStoreDeeplink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppStoreDeeplink.swift; path = source/UberRides/AppStoreDeeplink.swift; sourceTree = "<group>"; };
+		274B6C8B09DC028214BEC42F0F307F53 /* UserActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserActivity.swift; path = source/UberRides/Model/UserActivity.swift; sourceTree = "<group>"; };
+		27574F2AACB70363ED8E008CD22C72A8 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
+		277BD78F7D5F90472C0B3D1D2635C1B8 /* UberAuthenticatingProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UberAuthenticatingProtocol.swift; path = source/UberRides/OAuth/UberAuthenticatingProtocol.swift; sourceTree = "<group>"; };
+		2CC90BE44BABCA243453D65DEE69F53F /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		2CFA49389111583AD28ADB9901639940 /* TokenManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenManager.swift; path = source/UberRides/TokenManager.swift; sourceTree = "<group>"; };
+		2E09D8064735074EF8B7F948941F2F34 /* UberRides.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UberRides.modulemap; sourceTree = "<group>"; };
+		2EB86453427A8E06E177E5A53A9CF3D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		30E40E91418A61CAF118C2EB595AB1D0 /* RidesUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RidesUtil.swift; path = source/UberRides/Utilities/RidesUtil.swift; sourceTree = "<group>"; };
+		333CA41DDAF0C398D3A6EDB066893AD0 /* RideRequestViewRequestingBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestViewRequestingBehavior.swift; path = source/UberRides/RideRequestViewRequestingBehavior.swift; sourceTree = "<group>"; };
+		393186636A2D52B718F7F8C165F40BBE /* BaseDeeplink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDeeplink.swift; path = source/UberRides/BaseDeeplink.swift; sourceTree = "<group>"; };
+		476B37B012225ED40B97A3B126422D9D /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = ObjectMapper/Core/Map.swift; sourceTree = "<group>"; };
+		495CE132AFAEC2F5B2CF6D47BD7663F5 /* Pods-uberads-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-uberads-resources.sh"; sourceTree = "<group>"; };
+		4B53E727F5F3DCA86DDE34247B20963F /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = source/UberRides/Configuration.swift; sourceTree = "<group>"; };
+		4C75B91525C0742FEC7C29AD13D9A51A /* UberRides-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UberRides-umbrella.h"; sourceTree = "<group>"; };
+		4C9007B7540D61792E4B8CC82E9D81C1 /* Pods-uberads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-uberads.debug.xcconfig"; sourceTree = "<group>"; };
+		4FA3DE0B9BA6A67CEF7E9C077E061267 /* RideRequestingProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestingProtocol.swift; path = source/UberRides/RideRequestingProtocol.swift; sourceTree = "<group>"; };
+		50FB8BA19ED40E687B37DC57F7FB09BE /* RidesError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RidesError.swift; path = source/UberRides/Model/RidesError.swift; sourceTree = "<group>"; };
+		515BB24BCB558A6C6816DC6C1C97492C /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		532D3AB7EC51C267B971A4526247AD48 /* RideRequestViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestViewController.swift; path = source/UberRides/RideRequestViewController.swift; sourceTree = "<group>"; };
+		534F1F92ECC5634677545BBC608F628B /* UserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = source/UberRides/Model/UserProfile.swift; sourceTree = "<group>"; };
+		56331D0E09090585E5D366D93B6717E3 /* NSDataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDataTransform.swift; path = ObjectMapper/Transforms/NSDataTransform.swift; sourceTree = "<group>"; };
+		5850A763256B25818611532B17C87DB9 /* Pods-uberads-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-uberads-dummy.m"; sourceTree = "<group>"; };
+		5AA966518B94703D4A439B4731ABE1DD /* RideParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideParameters.swift; path = source/UberRides/Model/RideParameters.swift; sourceTree = "<group>"; };
+		5F75F8FC14423D50AF98193E311B2001 /* BaseAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAuthenticator.swift; path = source/UberRides/OAuth/BaseAuthenticator.swift; sourceTree = "<group>"; };
+		5F98916F5BFD9C5CA13BDB3943459D81 /* AuthenticationURLUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationURLUtility.swift; path = source/UberRides/Utilities/AuthenticationURLUtility.swift; sourceTree = "<group>"; };
+		6180636AD9E13B5FF7CEEED8ADF33BCB /* UberProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UberProduct.swift; path = source/UberRides/Model/UberProduct.swift; sourceTree = "<group>"; };
+		63D64C59B221A809963FA75DDB8D47F2 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		6489414A98C1259503A43D705C3E1B55 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
+		69A127EC892FBB837FA85B1E7B02B3DA /* LoginManagingProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginManagingProtocol.swift; path = source/UberRides/OAuth/LoginManagingProtocol.swift; sourceTree = "<group>"; };
+		6CDD3BC5379F97DE6604ABCD042BF550 /* ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelMapper.swift; path = source/UberRides/ModelMapper.swift; sourceTree = "<group>"; };
+		6EEF56553B1BAE67F3993C0300811A06 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
+		72BFDC2B9127AAD53D9C3A6196CD42E6 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		781EE687B984855502B2F60B49DAA144 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794A6D803D631999BE28E24F28B61127 /* RideRequestViewErrorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestViewErrorFactory.swift; path = source/UberRides/RideRequestViewErrorFactory.swift; sourceTree = "<group>"; };
+		7CBD5760E2334AA0301307A33DE16E1F /* Pods-uberads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-uberads.release.xcconfig"; sourceTree = "<group>"; };
+		7FD8AF81658CE80FB9CB2D52D9F50D1B /* NativeAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeAuthenticator.swift; path = source/UberRides/OAuth/NativeAuthenticator.swift; sourceTree = "<group>"; };
+		81FB1F38F94E6BB473D90C942D5CEF16 /* ImplicitGrantAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImplicitGrantAuthenticator.swift; path = source/UberRides/OAuth/ImplicitGrantAuthenticator.swift; sourceTree = "<group>"; };
+		85FD8E5C3E870477C333AA86B1AD327F /* RideRequestView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestView.swift; path = source/UberRides/RideRequestView.swift; sourceTree = "<group>"; };
+		86D2ADFC09492E1F12D30E0A1DA65794 /* TimeEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeEstimate.swift; path = source/UberRides/Model/TimeEstimate.swift; sourceTree = "<group>"; };
+		8765DA19CF02FC9019AC38C93141A20A /* Vehicle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = source/UberRides/Model/Vehicle.swift; sourceTree = "<group>"; };
+		88D186024AB80D332FD4EF98EE84737B /* UberRides.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UberRides.xcconfig; sourceTree = "<group>"; };
+		89B45EF1D3631F47399F071856737EEB /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
+		8C80EE6A28FF166BB129B2C7CA96A994 /* Pods-uberads-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-uberads-frameworks.sh"; sourceTree = "<group>"; };
+		8DB8A05DB21403A9D0EF691488EA548F /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		8F2571243FE2CACFF4D14098722B407F /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = ObjectMapper/Transforms/DictionaryTransform.swift; sourceTree = "<group>"; };
+		901DC2EFE9F89B22CF9C862FDF30A865 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "source/UberRides/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		9354DFF1F70B867F39D2C26D266D0955 /* RideEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideEstimate.swift; path = source/UberRides/Model/RideEstimate.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94465AD7B81CE9924DD04E4812E52B6C /* RideStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideStatus.swift; path = source/UberRides/Model/RideStatus.swift; sourceTree = "<group>"; };
+		94BA59D022D47199D307F7957BB32CDE /* RideRequestButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestButton.swift; path = source/UberRides/RideRequestButton.swift; sourceTree = "<group>"; };
+		97276B26CF4150FA013FB38F1BEC78CF /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
+		9A10D75F190ACAD68AEEF1076A848569 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		9CAB86875E8432CE4CF3B4513F18A30A /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		9D93DAFC3ACCE9B51BB8D65B5446A43F /* DeeplinkingProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeeplinkingProtocol.swift; path = source/UberRides/DeeplinkingProtocol.swift; sourceTree = "<group>"; };
+		A1427FC7876E748A2B69A71398BFBEC5 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = ObjectMapper/Transforms/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		A8AB752709830BFFD95B390DDAB6B66F /* AccessToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessToken.swift; path = source/UberRides/OAuth/AccessToken.swift; sourceTree = "<group>"; };
+		A9396EAEBEE866165B730193D21C88C1 /* LoginView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = source/UberRides/OAuth/LoginView.swift; sourceTree = "<group>"; };
+		ADF6F9A81B59FFC5EDDB6AAD2033A817 /* Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Driver.swift; path = source/UberRides/Model/Driver.swift; sourceTree = "<group>"; };
+		B0BCC0CE4D2B1E685206AAC2D94E4DF3 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = source/UberRides/Request.swift; sourceTree = "<group>"; };
+		B2E1717B4941A45370F78EEAAB149883 /* OAuthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthViewController.swift; path = source/UberRides/OAuth/OAuthViewController.swift; sourceTree = "<group>"; };
+		B4A0EC4A6026C1CE6CB338A7BB43728E /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = source/UberRides/Resources/Media.xcassets; sourceTree = "<group>"; };
+		BB5699BEBE6DF3CC28D99FB1D20C5723 /* Pods-uberads-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-uberads-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD04F60C3DC933DB0CE5A65DDFB86562 /* UberButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UberButton.swift; path = source/UberRides/UberButton.swift; sourceTree = "<group>"; };
+		C2840727AB89E64B6CE0940126DB493D /* Pods_uberads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_uberads.framework; path = "Pods-uberads.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B09168E6C3EC7AB0DCC6FE58766FF6 /* RidesClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RidesClient.swift; path = source/UberRides/RidesClient.swift; sourceTree = "<group>"; };
+		C3D72C81D9A8996E9CFCB30BB8189D23 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
+		C40DE40E8CF9F0545BAB135124AB964F /* Pods-uberads-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-uberads-umbrella.h"; sourceTree = "<group>"; };
+		C4901FB06AF348E675F76DFC817E4C5A /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = ObjectMapper/Core/Mappable.swift; sourceTree = "<group>"; };
+		C62A7E8EF6B408A75EBA44FB52A0A025 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
+		CBBEC4A35C6808246E638B9049D5604B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8EA94989578D5DE4D513C3311FD5B9 /* hi-In.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "hi-In.lproj"; path = "source/UberRides/Resources/hi-In.lproj"; sourceTree = "<group>"; };
+		CFBE80DD360E2D28833407A71E6E0C4B /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
+		D23D266E84F2D46E913779A30E6D91B9 /* DistanceEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DistanceEstimate.swift; path = source/UberRides/Model/DistanceEstimate.swift; sourceTree = "<group>"; };
+		D5B0F82BAA25667FB075C3956CC10D89 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		D61CBB385BDEE1CE37D3FE3E6D403A4A /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = source/UberRides/Resources/en.lproj; sourceTree = "<group>"; };
+		D7E81AEB74C2079E21FEB8D1B1D93A16 /* RideRequestDataBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestDataBuilder.swift; path = source/UberRides/Model/RideRequestDataBuilder.swift; sourceTree = "<group>"; };
+		D90A7B9D308CB882A45746C93567F95A /* RequestDeeplink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestDeeplink.swift; path = source/UberRides/RequestDeeplink.swift; sourceTree = "<group>"; };
+		D9F03F30958AA5C128F05D4682D2A174 /* PaymentMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentMethod.swift; path = source/UberRides/Model/PaymentMethod.swift; sourceTree = "<group>"; };
+		DB24F14B106A6FBCE7B45087C6473B79 /* RideMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideMap.swift; path = source/UberRides/Model/RideMap.swift; sourceTree = "<group>"; };
+		DC41A8AA460219EC918F896CFA2206DC /* RideRequestLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestLocation.swift; path = source/UberRides/Model/RideRequestLocation.swift; sourceTree = "<group>"; };
+		DD5FA482E4F4114CC2E95D315857EF82 /* LoginViewAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginViewAuthenticator.swift; path = source/UberRides/OAuth/LoginViewAuthenticator.swift; sourceTree = "<group>"; };
+		DDCEF16FC4E95B0EC0A6D06D3DECE58F /* RequestURLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestURLBuilder.swift; path = source/UberRides/RequestURLBuilder.swift; sourceTree = "<group>"; };
+		DFC9F8251D96F193281C3BCD2A9B490A /* RideRequestViewErrorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RideRequestViewErrorType.swift; path = source/UberRides/RideRequestViewErrorType.swift; sourceTree = "<group>"; };
+		E1B5661F8A1630683009C693CDB8DB7F /* AuthorizationCodeGrantAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationCodeGrantAuthenticator.swift; path = source/UberRides/OAuth/AuthorizationCodeGrantAuthenticator.swift; sourceTree = "<group>"; };
+		E559D2FD85FBF46C63DD80AF14B8BD4E /* ModalRideRequestViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalRideRequestViewController.swift; path = source/UberRides/ModalRideRequestViewController.swift; sourceTree = "<group>"; };
+		E71C2918EA8E7C795FA3AE5CABF3A5A2 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8562ABB5591603620FAADE6A07630DA /* UberRides-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UberRides-dummy.m"; sourceTree = "<group>"; };
+		E8D4C1E722D3E77681DA5E58F24C5521 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "source/UberRides/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		EFB6BAA1F68451219B1F1DAEBF2C1DAD /* AccessTokenFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessTokenFactory.swift; path = source/UberRides/OAuth/AccessTokenFactory.swift; sourceTree = "<group>"; };
+		F10A36E6ED9FFC2D035DBC614688236C /* RidesScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RidesScope.swift; path = source/UberRides/Model/RidesScope.swift; sourceTree = "<group>"; };
+		F16FDB1CBFAE8A5B9871037725FFC73B /* LoginManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginManager.swift; path = source/UberRides/OAuth/LoginManager.swift; sourceTree = "<group>"; };
+		F325B9D280282DE00D04ABE666102C6E /* EndpointsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndpointsManager.swift; path = source/UberRides/EndpointsManager.swift; sourceTree = "<group>"; };
+		F7315ABE0BF4EB644842DDA240C894D3 /* RidesAppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RidesAppDelegate.swift; path = source/UberRides/RidesAppDelegate.swift; sourceTree = "<group>"; };
+		F805EDC9AB5697ACF5F1FCC0D7348F32 /* UberRides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UberRides.framework; path = UberRides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F915229CB99DF4E952018C2E81098AB1 /* Pods-uberads.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-uberads.modulemap"; sourceTree = "<group>"; };
+		F967C2076D57F5E029216BDBBB48240D /* Place.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Place.swift; path = source/UberRides/Model/Place.swift; sourceTree = "<group>"; };
+		FA448F01A601DA08C5EF5E8CF11F1C8A /* Ride.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ride.swift; path = source/UberRides/Model/Ride.swift; sourceTree = "<group>"; };
+		FC876D61E605313123A9A89398B24F57 /* Pods-uberads-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-uberads-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC9D5106915D66CBED0CB7A84748A56C /* UberRides-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UberRides-prefix.pch"; sourceTree = "<group>"; };
+		FE2E37CCBAD4E45CBACF7AFD64BCBB9C /* AuthenticationDeeplink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationDeeplink.swift; path = source/UberRides/AuthenticationDeeplink.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08FD2D8051E34B25D950E9C210A93B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4842F0C032B3C12F1204869BF4A0516 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898C76590D17D0F653FA5EBC59632C42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A66948C486B1AD9A2DAF776073F7066 /* Foundation.framework in Frameworks */,
+				45B283169942280A3824738535AD13DF /* ObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB1FFB70A71BC222D5C6D87636BFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66F9E15925F8887007C056ED59D8A99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EBC6915D4556304C8F01D9F70C6B35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				781EE687B984855502B2F60B49DAA144 /* Info.plist */,
+				2E09D8064735074EF8B7F948941F2F34 /* UberRides.modulemap */,
+				88D186024AB80D332FD4EF98EE84737B /* UberRides.xcconfig */,
+				E8562ABB5591603620FAADE6A07630DA /* UberRides-dummy.m */,
+				FC9D5106915D66CBED0CB7A84748A56C /* UberRides-prefix.pch */,
+				4C75B91525C0742FEC7C29AD13D9A51A /* UberRides-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UberRides";
+			sourceTree = "<group>";
+		};
+		0F525937C36C8401C6021BD8DDFB67EB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				901DCD4DFB3F97596D6C48BB875B4CDA /* Pods-uberads */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		348B75C2828296B0506BE6C584F78C73 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBBEC4A35C6808246E638B9049D5604B /* Info.plist */,
+				8DB8A05DB21403A9D0EF691488EA548F /* ObjectMapper.modulemap */,
+				D5B0F82BAA25667FB075C3956CC10D89 /* ObjectMapper.xcconfig */,
+				2CC90BE44BABCA243453D65DEE69F53F /* ObjectMapper-dummy.m */,
+				72BFDC2B9127AAD53D9C3A6196CD42E6 /* ObjectMapper-prefix.pch */,
+				63D64C59B221A809963FA75DDB8D47F2 /* ObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
+		6C604F99EA7C3E16FFEB36051E62D5FA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2EB86453427A8E06E177E5A53A9CF3D2 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		72A4F101D4D40D3C9EBA12D90663F5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515BB24BCB558A6C6816DC6C1C97492C /* ObjectMapper.framework */,
+				6C604F99EA7C3E16FFEB36051E62D5FA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		776C95B7726D8CB3CDE68E9D62A19F75 /* UberRides */ = {
+			isa = PBXGroup;
+			children = (
+				A8AB752709830BFFD95B390DDAB6B66F /* AccessToken.swift */,
+				EFB6BAA1F68451219B1F1DAEBF2C1DAD /* AccessTokenFactory.swift */,
+				271E65232E63536A8B1701B82B18FC33 /* AppStoreDeeplink.swift */,
+				FE2E37CCBAD4E45CBACF7AFD64BCBB9C /* AuthenticationDeeplink.swift */,
+				5F98916F5BFD9C5CA13BDB3943459D81 /* AuthenticationURLUtility.swift */,
+				E1B5661F8A1630683009C693CDB8DB7F /* AuthorizationCodeGrantAuthenticator.swift */,
+				5F75F8FC14423D50AF98193E311B2001 /* BaseAuthenticator.swift */,
+				393186636A2D52B718F7F8C165F40BBE /* BaseDeeplink.swift */,
+				4B53E727F5F3DCA86DDE34247B20963F /* Configuration.swift */,
+				123062963ABFDE9859367EFA59A04452 /* DeeplinkErrorFactory.swift */,
+				0866BB6BB39BD7C5EC54D77B3375A307 /* DeeplinkErrorType.swift */,
+				9D93DAFC3ACCE9B51BB8D65B5446A43F /* DeeplinkingProtocol.swift */,
+				051A1D3BD87A9258B557CD014BC8E58B /* DeeplinkRequestingBehavior.swift */,
+				D23D266E84F2D46E913779A30E6D91B9 /* DistanceEstimate.swift */,
+				ADF6F9A81B59FFC5EDDB6AAD2033A817 /* Driver.swift */,
+				F325B9D280282DE00D04ABE666102C6E /* EndpointsManager.swift */,
+				81FB1F38F94E6BB473D90C942D5CEF16 /* ImplicitGrantAuthenticator.swift */,
+				04696331DA9C63B2F0F1E6B9550B9607 /* KeychainWrapper.swift */,
+				003277A4B599C11C914658F7F97E5BD5 /* LoginButton.swift */,
+				F16FDB1CBFAE8A5B9871037725FFC73B /* LoginManager.swift */,
+				69A127EC892FBB837FA85B1E7B02B3DA /* LoginManagingProtocol.swift */,
+				A9396EAEBEE866165B730193D21C88C1 /* LoginView.swift */,
+				DD5FA482E4F4114CC2E95D315857EF82 /* LoginViewAuthenticator.swift */,
+				E559D2FD85FBF46C63DD80AF14B8BD4E /* ModalRideRequestViewController.swift */,
+				01991820D3479E782424A6421A9B0593 /* ModalViewController.swift */,
+				6CDD3BC5379F97DE6604ABCD042BF550 /* ModelMapper.swift */,
+				7FD8AF81658CE80FB9CB2D52D9F50D1B /* NativeAuthenticator.swift */,
+				B2E1717B4941A45370F78EEAAB149883 /* OAuthViewController.swift */,
+				D9F03F30958AA5C128F05D4682D2A174 /* PaymentMethod.swift */,
+				F967C2076D57F5E029216BDBBB48240D /* Place.swift */,
+				01B750B62B785DBB8ABA220A38580B37 /* PriceEstimate.swift */,
+				B0BCC0CE4D2B1E685206AAC2D94E4DF3 /* Request.swift */,
+				D90A7B9D308CB882A45746C93567F95A /* RequestDeeplink.swift */,
+				DDCEF16FC4E95B0EC0A6D06D3DECE58F /* RequestURLBuilder.swift */,
+				FA448F01A601DA08C5EF5E8CF11F1C8A /* Ride.swift */,
+				21DD03A86D7BC9727E7ED4D6AA222DD1 /* RideCharge.swift */,
+				9354DFF1F70B867F39D2C26D266D0955 /* RideEstimate.swift */,
+				DB24F14B106A6FBCE7B45087C6473B79 /* RideMap.swift */,
+				5AA966518B94703D4A439B4731ABE1DD /* RideParameters.swift */,
+				05830B808BFF9D1BEBB56DE51E622B95 /* RideReceipt.swift */,
+				94BA59D022D47199D307F7957BB32CDE /* RideRequestButton.swift */,
+				D7E81AEB74C2079E21FEB8D1B1D93A16 /* RideRequestDataBuilder.swift */,
+				4FA3DE0B9BA6A67CEF7E9C077E061267 /* RideRequestingProtocol.swift */,
+				DC41A8AA460219EC918F896CFA2206DC /* RideRequestLocation.swift */,
+				85FD8E5C3E870477C333AA86B1AD327F /* RideRequestView.swift */,
+				532D3AB7EC51C267B971A4526247AD48 /* RideRequestViewController.swift */,
+				794A6D803D631999BE28E24F28B61127 /* RideRequestViewErrorFactory.swift */,
+				DFC9F8251D96F193281C3BCD2A9B490A /* RideRequestViewErrorType.swift */,
+				333CA41DDAF0C398D3A6EDB066893AD0 /* RideRequestViewRequestingBehavior.swift */,
+				F7315ABE0BF4EB644842DDA240C894D3 /* RidesAppDelegate.swift */,
+				C3B09168E6C3EC7AB0DCC6FE58766FF6 /* RidesClient.swift */,
+				50FB8BA19ED40E687B37DC57F7FB09BE /* RidesError.swift */,
+				F10A36E6ED9FFC2D035DBC614688236C /* RidesScope.swift */,
+				94465AD7B81CE9924DD04E4812E52B6C /* RideStatus.swift */,
+				30E40E91418A61CAF118C2EB595AB1D0 /* RidesUtil.swift */,
+				86D2ADFC09492E1F12D30E0A1DA65794 /* TimeEstimate.swift */,
+				2CFA49389111583AD28ADB9901639940 /* TokenManager.swift */,
+				277BD78F7D5F90472C0B3D1D2635C1B8 /* UberAuthenticatingProtocol.swift */,
+				BD04F60C3DC933DB0CE5A65DDFB86562 /* UberButton.swift */,
+				6180636AD9E13B5FF7CEEED8ADF33BCB /* UberProduct.swift */,
+				274B6C8B09DC028214BEC42F0F307F53 /* UserActivity.swift */,
+				534F1F92ECC5634677545BBC608F628B /* UserProfile.swift */,
+				8765DA19CF02FC9019AC38C93141A20A /* Vehicle.swift */,
+				9BA9239FE63435A7373CA2E272EE7CEE /* Resources */,
+				03EBC6915D4556304C8F01D9F70C6B35 /* Support Files */,
+			);
+			name = UberRides;
+			path = UberRides;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				72A4F101D4D40D3C9EBA12D90663F5FA /* Frameworks */,
+				D84AC2BDE417437C5F8DB89650DCE19B /* Pods */,
+				90E36D4E1480B83CD17B9117C104B3CA /* Products */,
+				0F525937C36C8401C6021BD8DDFB67EB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B78A19B3A279F60DD2087CDAAEC17DE /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				9A10D75F190ACAD68AEEF1076A848569 /* CustomDateFormatTransform.swift */,
+				1F2C99BF527C8FC16A340DDE2BA50EF5 /* DateFormatterTransform.swift */,
+				6EEF56553B1BAE67F3993C0300811A06 /* DateTransform.swift */,
+				8F2571243FE2CACFF4D14098722B407F /* DictionaryTransform.swift */,
+				27574F2AACB70363ED8E008CD22C72A8 /* EnumTransform.swift */,
+				CFBE80DD360E2D28833407A71E6E0C4B /* FromJSON.swift */,
+				9CAB86875E8432CE4CF3B4513F18A30A /* ISO8601DateTransform.swift */,
+				476B37B012225ED40B97A3B126422D9D /* Map.swift */,
+				C4901FB06AF348E675F76DFC817E4C5A /* Mappable.swift */,
+				97276B26CF4150FA013FB38F1BEC78CF /* Mapper.swift */,
+				56331D0E09090585E5D366D93B6717E3 /* NSDataTransform.swift */,
+				A1427FC7876E748A2B69A71398BFBEC5 /* NSDecimalNumberTransform.swift */,
+				C3D72C81D9A8996E9CFCB30BB8189D23 /* Operators.swift */,
+				89B45EF1D3631F47399F071856737EEB /* ToJSON.swift */,
+				6489414A98C1259503A43D705C3E1B55 /* TransformOf.swift */,
+				2345D24DB53F811EC533CD316F88F9E4 /* TransformType.swift */,
+				C62A7E8EF6B408A75EBA44FB52A0A025 /* URLTransform.swift */,
+				348B75C2828296B0506BE6C584F78C73 /* Support Files */,
+			);
+			name = ObjectMapper;
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		901DCD4DFB3F97596D6C48BB875B4CDA /* Pods-uberads */ = {
+			isa = PBXGroup;
+			children = (
+				1D6779630D279574BE82C4A0DB274AAF /* Info.plist */,
+				F915229CB99DF4E952018C2E81098AB1 /* Pods-uberads.modulemap */,
+				FC876D61E605313123A9A89398B24F57 /* Pods-uberads-acknowledgements.markdown */,
+				BB5699BEBE6DF3CC28D99FB1D20C5723 /* Pods-uberads-acknowledgements.plist */,
+				5850A763256B25818611532B17C87DB9 /* Pods-uberads-dummy.m */,
+				8C80EE6A28FF166BB129B2C7CA96A994 /* Pods-uberads-frameworks.sh */,
+				495CE132AFAEC2F5B2CF6D47BD7663F5 /* Pods-uberads-resources.sh */,
+				C40DE40E8CF9F0545BAB135124AB964F /* Pods-uberads-umbrella.h */,
+				4C9007B7540D61792E4B8CC82E9D81C1 /* Pods-uberads.debug.xcconfig */,
+				7CBD5760E2334AA0301307A33DE16E1F /* Pods-uberads.release.xcconfig */,
+			);
+			name = "Pods-uberads";
+			path = "Target Support Files/Pods-uberads";
+			sourceTree = "<group>";
+		};
+		90E36D4E1480B83CD17B9117C104B3CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E71C2918EA8E7C795FA3AE5CABF3A5A2 /* ObjectMapper.framework */,
+				C2840727AB89E64B6CE0940126DB493D /* Pods_uberads.framework */,
+				F805EDC9AB5697ACF5F1FCC0D7348F32 /* UberRides.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BA9239FE63435A7373CA2E272EE7CEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D61CBB385BDEE1CE37D3FE3E6D403A4A /* en.lproj */,
+				CF8EA94989578D5DE4D513C3311FD5B9 /* hi-In.lproj */,
+				B4A0EC4A6026C1CE6CB338A7BB43728E /* Media.xcassets */,
+				901DC2EFE9F89B22CF9C862FDF30A865 /* zh-Hans.lproj */,
+				E8D4C1E722D3E77681DA5E58F24C5521 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D84AC2BDE417437C5F8DB89650DCE19B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B78A19B3A279F60DD2087CDAAEC17DE /* ObjectMapper */,
+				776C95B7726D8CB3CDE68E9D62A19F75 /* UberRides */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		56C9DF92D2FE54E4C09A9D6837FEEB09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E55375B167BAE7DCCE7F917D8CA9EAD2 /* ObjectMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3E3BF321033D78240B38E3CC28AE0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9B250394859089BCDB86C54BCF61E7 /* Pods-uberads-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		941FDFF28477A3386479042EF4D74558 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED00FBE051ECA362602622B35DEE74F /* UberRides-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5602ECDE986016DB7B01B78E48B50E9 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildPhases = (
+				907A9B04AF529B6DD8A1547742D9165B /* Sources */,
+				08FD2D8051E34B25D950E9C210A93B2C /* Frameworks */,
+				56C9DF92D2FE54E4C09A9D6837FEEB09 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = E71C2918EA8E7C795FA3AE5CABF3A5A2 /* ObjectMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63C6CB4C9E47EBEF30710E740193CB6F /* Pods-uberads */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E108595BF57CB88E4854BDCCD2EB07C5 /* Build configuration list for PBXNativeTarget "Pods-uberads" */;
+			buildPhases = (
+				E96AF1B5960D9051CCFEB53F3A15F795 /* Sources */,
+				A5DB1FFB70A71BC222D5C6D87636BFD3 /* Frameworks */,
+				7D3E3BF321033D78240B38E3CC28AE0F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C16006BF208F2FAFD321E935B9D19DA9 /* PBXTargetDependency */,
+				23C26FDDE31D25CC8A106220889998EB /* PBXTargetDependency */,
+			);
+			name = "Pods-uberads";
+			productName = "Pods-uberads";
+			productReference = C2840727AB89E64B6CE0940126DB493D /* Pods_uberads.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79AC84D50B0950C961C2D10C707AD38D /* UberRides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A0726F8415537200E360AF7FA9CB6B5 /* Build configuration list for PBXNativeTarget "UberRides" */;
+			buildPhases = (
+				C8291A2410C7E54D633EC85C82B2EA36 /* Sources */,
+				898C76590D17D0F653FA5EBC59632C42 /* Frameworks */,
+				F2B99D4708B3A03EF8B357C29AC8A673 /* Resources */,
+				941FDFF28477A3386479042EF4D74558 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8ADD6365F14F6F25C4A1AA93FEF3A37 /* PBXTargetDependency */,
+			);
+			name = UberRides;
+			productName = UberRides;
+			productReference = F805EDC9AB5697ACF5F1FCC0D7348F32 /* UberRides.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 90E36D4E1480B83CD17B9117C104B3CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */,
+				63C6CB4C9E47EBEF30710E740193CB6F /* Pods-uberads */,
+				79AC84D50B0950C961C2D10C707AD38D /* UberRides */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2B99D4708B3A03EF8B357C29AC8A673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4F84DF1F9018065E14AA5DDCA42E0B /* en.lproj in Resources */,
+				4D87D70F1C04E1CB04931A0B825EF4EB /* hi-In.lproj in Resources */,
+				1C5FD9351A887E00795020DBE6C345E3 /* Media.xcassets in Resources */,
+				DA7F71068A2372AB1E15BE33814C13AA /* zh-Hans.lproj in Resources */,
+				A0BC383B55E9F20401DB7B16ED562512 /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907A9B04AF529B6DD8A1547742D9165B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F079EDF04959B3ED5FAA786240556AA2 /* CustomDateFormatTransform.swift in Sources */,
+				DBD513D6F6EF4E5BE03C19FECC7B96FD /* DateFormatterTransform.swift in Sources */,
+				A56CC6646069C7B73198B3BE44AD9A74 /* DateTransform.swift in Sources */,
+				E1021AACCEE3974FEC50E94E97F26CD9 /* DictionaryTransform.swift in Sources */,
+				380A8C72C24DF58647F6F83FDC4FC5C7 /* EnumTransform.swift in Sources */,
+				359E3DC8F905A85D1F2B00FA4CDE24D2 /* FromJSON.swift in Sources */,
+				795D7C49C1F2C17C65A8680731AD9223 /* ISO8601DateTransform.swift in Sources */,
+				E6919C2B794522D0359CA188676E5D47 /* Map.swift in Sources */,
+				92A560B222EE1F3ED6D37A77D93B8A93 /* Mappable.swift in Sources */,
+				68A7816B7323BA2B7776A0D9B11D3403 /* Mapper.swift in Sources */,
+				5732560C243618A35AF574BE6CE602A7 /* NSDataTransform.swift in Sources */,
+				D56F7FB2A8C29FB5C4D988711E270980 /* NSDecimalNumberTransform.swift in Sources */,
+				83A261AAEB26B69282554BA74021D41A /* ObjectMapper-dummy.m in Sources */,
+				BD97227F05E8D5E93CE8995F78C65774 /* Operators.swift in Sources */,
+				253DD75073489E47A4ADD480A5B25FA1 /* ToJSON.swift in Sources */,
+				7D8A80DAE7B04FC6EF18977624DA3EB4 /* TransformOf.swift in Sources */,
+				0FE044F0C1960CAD585819C1ADA66BC0 /* TransformType.swift in Sources */,
+				0EDEE51821996B3159B5D07EF5AFE8E1 /* URLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8291A2410C7E54D633EC85C82B2EA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D16D017198ACA0196A0CDB07F7BF51 /* AccessToken.swift in Sources */,
+				5BB103EE5ED585C7F46B8D24C9BF2BA7 /* AccessTokenFactory.swift in Sources */,
+				C91F023CEDA78B58ECC32239BE041C56 /* AppStoreDeeplink.swift in Sources */,
+				E6052808AEE7FE244A2CD0BF85849B04 /* AuthenticationDeeplink.swift in Sources */,
+				73F8EE90A6BF1002734577DFD59BA572 /* AuthenticationURLUtility.swift in Sources */,
+				0748B1D28DA58A679B03A6140A7389F2 /* AuthorizationCodeGrantAuthenticator.swift in Sources */,
+				57080AB5B3ABADECEFD48E91236C41B0 /* BaseAuthenticator.swift in Sources */,
+				720635EF90E95A0C3A9BB4CACA031CF3 /* BaseDeeplink.swift in Sources */,
+				33B8E9C65925605715329289E41F570D /* Configuration.swift in Sources */,
+				99F422158F92D1102306BBFFA4FE9328 /* DeeplinkErrorFactory.swift in Sources */,
+				82A0A70E959A76FA2BE1CD6A43EEC301 /* DeeplinkErrorType.swift in Sources */,
+				EA4B6FB573D879B7B753AECB127606C5 /* DeeplinkingProtocol.swift in Sources */,
+				564660E6549E27C80E379319485258A8 /* DeeplinkRequestingBehavior.swift in Sources */,
+				5D3502D0DCCAF77B966327E33E520077 /* DistanceEstimate.swift in Sources */,
+				E814D212530FC60E00AC6F1EBD0090BC /* Driver.swift in Sources */,
+				A7EF84E8D496DA75234B4BBD8F30FD82 /* EndpointsManager.swift in Sources */,
+				6F656F1211579C804905DCF7220BA2E3 /* ImplicitGrantAuthenticator.swift in Sources */,
+				675C1FE1D87F83E6B8B141828EA78929 /* KeychainWrapper.swift in Sources */,
+				B68132D888B201E06534B2FECC50722A /* LoginButton.swift in Sources */,
+				D5485551070ABDA0B024D4E8BBC79B4A /* LoginManager.swift in Sources */,
+				E3B620E5E79A4A1FABF977837F93045E /* LoginManagingProtocol.swift in Sources */,
+				B46F49DDBB3450D494A3C006FFFFFDBA /* LoginView.swift in Sources */,
+				2407248E02F3466FFE16BD0B0464B7F3 /* LoginViewAuthenticator.swift in Sources */,
+				AEF94DFBB9919C31E71300AD0AD30621 /* ModalRideRequestViewController.swift in Sources */,
+				A3DEC562E879E9518A25ADC6BB6CEBE4 /* ModalViewController.swift in Sources */,
+				98EFD8FFBF519218854ED12235132F90 /* ModelMapper.swift in Sources */,
+				8109651710079617E14EB611DD907404 /* NativeAuthenticator.swift in Sources */,
+				6CF28DF0E4C05B39920479F1EAAD064F /* OAuthViewController.swift in Sources */,
+				85CD017A5A2A9A1BF26B1BF88C43CA9E /* PaymentMethod.swift in Sources */,
+				A0355BE9E93F8691563B8172C4D55E5F /* Place.swift in Sources */,
+				CDB5E1874C8F64A93AA051B4B723D0D1 /* PriceEstimate.swift in Sources */,
+				BDCA1316C6B7D0C346D4F83E527CC4CE /* Request.swift in Sources */,
+				F07669756071A3163ABF981094E10E5D /* RequestDeeplink.swift in Sources */,
+				77883E2B727F8CB58645F717AB5AC070 /* RequestURLBuilder.swift in Sources */,
+				6DC07917BEFB097E8DEA096B0C81AB91 /* Ride.swift in Sources */,
+				3A668F082FAE5BA896F5967998C8ACD5 /* RideCharge.swift in Sources */,
+				DC95C0B0B7F20E9A199AE03BF38D3BF9 /* RideEstimate.swift in Sources */,
+				573031EF4CFFD5E87A6031C7208E8F33 /* RideMap.swift in Sources */,
+				061E260A9DBDC75888ABFB24144AD170 /* RideParameters.swift in Sources */,
+				A96656AA5FF2215B958E9F7C97605EF4 /* RideReceipt.swift in Sources */,
+				64EA70CC41B0AA1792F58B404EC28EB4 /* RideRequestButton.swift in Sources */,
+				2E6D4C1FEFC7D87D7B0C6C2CD905938D /* RideRequestDataBuilder.swift in Sources */,
+				BDA8FF1778332D6CA65026D5F0B416A0 /* RideRequestingProtocol.swift in Sources */,
+				AA99F5176C32D36DFEBEDC2F5B9DAD77 /* RideRequestLocation.swift in Sources */,
+				BDC0FBBF421ACAE35DB7902DEB8141C7 /* RideRequestView.swift in Sources */,
+				B18FF89132C6CFCC820846DA6747FF07 /* RideRequestViewController.swift in Sources */,
+				84BC1E84390918EE20DB43FBDB9A32EF /* RideRequestViewErrorFactory.swift in Sources */,
+				CFEAA4CF5331B5150BAC647F87E3843F /* RideRequestViewErrorType.swift in Sources */,
+				21CF35299E7494A1E4D4E4D068B771F1 /* RideRequestViewRequestingBehavior.swift in Sources */,
+				F314C0A3A2E00434B067C0AFF1835197 /* RidesAppDelegate.swift in Sources */,
+				DA2013D20F8E7D862D7752525893DB20 /* RidesClient.swift in Sources */,
+				A57AEFE9E5A79B08F86E955A618585ED /* RidesError.swift in Sources */,
+				C0C82B58C8AA2E360666F85C0F9FEA6D /* RidesScope.swift in Sources */,
+				6386D4405F35FDB8142B9EAD1262999D /* RideStatus.swift in Sources */,
+				A55474F50802ABFAD11F7406E10EBBF3 /* RidesUtil.swift in Sources */,
+				BF4EAB57C0BE37F7EC78E840DD1ABF57 /* TimeEstimate.swift in Sources */,
+				DFFD9311FE9D1D6318120448DD3BB5DC /* TokenManager.swift in Sources */,
+				3B82A788149206D762FC3C3E076D07A5 /* UberAuthenticatingProtocol.swift in Sources */,
+				D8B7F967770C8FC1F29ED3F7A0F63A2A /* UberButton.swift in Sources */,
+				C5685300B9C4AA10EC4F3C9B8EE25851 /* UberProduct.swift in Sources */,
+				FDE3F0091849572D9F709AC89139DC57 /* UberRides-dummy.m in Sources */,
+				E79E8B09AED150E18818DA55CFAD80DA /* UserActivity.swift in Sources */,
+				F1A27D31430616C3CF888F32FEE4F852 /* UserProfile.swift in Sources */,
+				AE4EFA1A2B88B67D259AF24542BF7D17 /* Vehicle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96AF1B5960D9051CCFEB53F3A15F795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F49066AFDDF941F2C844FE6E7BA5CEF /* Pods-uberads-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23C26FDDE31D25CC8A106220889998EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UberRides;
+			target = 79AC84D50B0950C961C2D10C707AD38D /* UberRides */;
+			targetProxy = AFB7F03C676FBC6A98C3EAD918B8BF10 /* PBXContainerItemProxy */;
+		};
+		C16006BF208F2FAFD321E935B9D19DA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */;
+			targetProxy = F39E317AF93916DE162D4FD66D357587 /* PBXContainerItemProxy */;
+		};
+		F8ADD6365F14F6F25C4A1AA93FEF3A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 40A16CB0CB5FD49FD533BBC4F0A0C888 /* ObjectMapper */;
+			targetProxy = CC2284916379A1969F257A16D8262C9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14D5D40EA8590EE126E0F375E3A823CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CBD5760E2334AA0301307A33DE16E1F /* Pods-uberads.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-uberads/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-uberads/Pods-uberads.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_uberads;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		591FDFDFFDC7D1B5B5C8374A1481A337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D186024AB80D332FD4EF98EE84737B /* UberRides.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UberRides/UberRides-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UberRides/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UberRides/UberRides.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UberRides;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72BFA747282BF13B0F7DCFD20F36F523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B0F82BAA25667FB075C3956CC10D89 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87B4112EE62D05A4E159D72A1B1E0A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9007B7540D61792E4B8CC82E9D81C1 /* Pods-uberads.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-uberads/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-uberads/Pods-uberads.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_uberads;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92938DA708DDF799F511F91B3E9D4C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B0F82BAA25667FB075C3956CC10D89 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2009BAFBB9733FD10746418E9DC6490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D186024AB80D332FD4EF98EE84737B /* UberRides.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UberRides/UberRides-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UberRides/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UberRides/UberRides.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UberRides;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A0726F8415537200E360AF7FA9CB6B5 /* Build configuration list for PBXNativeTarget "UberRides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2009BAFBB9733FD10746418E9DC6490 /* Debug */,
+				591FDFDFFDC7D1B5B5C8374A1481A337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E108595BF57CB88E4854BDCCD2EB07C5 /* Build configuration list for PBXNativeTarget "Pods-uberads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B4112EE62D05A4E159D72A1B1E0A30 /* Debug */,
+				14D5D40EA8590EE126E0F375E3A823CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5602ECDE986016DB7B01B78E48B50E9 /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92938DA708DDF799F511F91B3E9D4C5D /* Debug */,
+				72BFA747282BF13B0F7DCFD20F36F523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
