@@ -32,18 +32,6 @@ app.get('/api/sms', (req, res)=>{
     })
 })
 
-app.get('/api/success', (req, res) => {
-    DB.usercode = req.query.code;
-    console.log('DB:', DB);
-    res.send({success: true})
-})
-
-app.post('/api/success', (req, res) => {
-    DB.usercode = req.query.code;
-    console.log('DB:', DB);
-    res.send({success: true})
-})
-
 const uber = new Uber({
   client_id: process.env.UBER_CLIENT_ID,
   client_secret: process.env.UBER_CLIENT_SECRET,
@@ -69,7 +57,7 @@ app.get('/api/success', (req, res) => {
      console.log('refresh_token:',refresh_token)
      DB.access_token = access_token;
      DB.refresh_token = refresh_token;
-     res.send({DB})
+     res.redirect(`${process.env.BASE_URI}/api/profile`);
    });
 });
 
@@ -87,8 +75,11 @@ app.get('/api/profile', (req, res) => {
 
     request.end(function (response) {
         if (response.error) throw new Error(res.error);
-        res.send(response.body)
+        // res.send(response.body)
+        console.log(response.body)
+        res.render('profile', response.body);
     });
+    
 
 });
 
