@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.google.api.client.auth.oauth2.Credential;
+
 import com.uber.sdk.core.auth.Scope;
 import com.uber.sdk.rides.auth.OAuth2Credentials;
 import com.uber.sdk.rides.client.CredentialsSession;

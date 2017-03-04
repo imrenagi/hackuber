@@ -17,7 +17,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,26 +29,32 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data
                     android:host="uberadss.herokuapp.com"
-                    android:pathPrefix="/"
+                    android:pathPrefix="/video"
                     android:scheme="https" />
-                <!-- note that the leading "/" is required for pathPrefix -->
-                <!-- Accepts URIs that begin with "example://gizmos” -->
-                <data
-                    android:host="video"
-                    android:scheme="uberads-hack.com" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".AuthActivity"
             android:label="@string/title_activity_auth"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".OAuthActivity"
             android:label="@string/title_activity_oauth"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
     </application>
 
 </manifest>

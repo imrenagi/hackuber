@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.example.imrenagi.uberhack_android"
+        applicationId "com.example.imrenagi.myapplication"
         minSdkVersion 23
         targetSdkVersion 25
         versionCode 1
@@ -17,26 +17,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    configurations.all{
-        resolutionStrategy.force 'com.google.code.findbugs:jsr305:2.0.1'
-    }
 }
-
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
-
     })
-    // single sign on
-    // oauth
     compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
-    compile 'com.uber.sdk:rides-android:0.6.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-
     testCompile 'junit:junit:4.12'
-
-
 }
