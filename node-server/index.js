@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 import express from 'express';
 const app = express();
 const twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
@@ -9,6 +8,7 @@ app.get('/', (req, res)=>res.send('use endpoint/api'))
 app.get('/api', (req, res)=>{
     res.send('API works')
 })
+
 
 app.get('/api/sms', (req, res)=>{
     const receiver_num = req.query.number;
