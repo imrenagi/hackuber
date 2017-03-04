@@ -76,8 +76,9 @@ app.get('/api/profile', (req, res) => {
     request.end(function (response) {
         if (response.error) throw new Error(res.error);
         // res.send(response.body)
-        console.log(response.body)
-        res.render('profile', response.body);
+        console.log(response.body);
+        res.send(response.body);
+        // res.render('profile', response.body);
     });
     
 
