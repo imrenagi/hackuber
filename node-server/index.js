@@ -3,13 +3,16 @@ import express from 'express';
 const app = express();
 const twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 import Uber from 'node-uber';
+import unirest from 'unirest';
+
 app.get('/', (req, res)=>res.send('use endpoint/api'))
+let DB = {};
 
 app.get('/api', (req, res)=>{
-    res.send('API works')
+    res.send(`<a href='${process.env.BASE_URI}/api/login'><button>Login with Uber</button></a>`)
 })
 
-app.post('/api/sms', (req, res)=>{
+app.get('/api/sms', (req, res)=>{
     const receiver_num = req.query.number;
     const receiver_name = req.query.name;
     twilio.sendMessage({
@@ -27,22 +30,30 @@ app.post('/api/sms', (req, res)=>{
     })
 })
 
-app.post('/api/webhook', (req, res)=>{
-    
+app.get('/api/success', (req, res) => {
+    DB.usercode = req.query.code;
+    console.log('DB:', DB);
+    res.send({success: true})
+})
+
+app.post('/api/success', (req, res) => {
+    DB.usercode = req.query.code;
+    console.log('DB:', DB);
+    res.send({success: true})
 })
 
 const uber = new Uber({
   client_id: process.env.UBER_CLIENT_ID,
   client_secret: process.env.UBER_CLIENT_SECRET,
   server_token: process.env.UBER_SERVICE_TOKEN,
-  redirect_uri: process.env.REDIRECT_URI,
+  redirect_uri: process.env.BASE_URI+'/api/success',
   name: 'UBERAds',
   language: 'en_US',
-  sandbox: true 
+  sandbox: true
 });
 
 app.get('/api/login', (req, res)=>{
-    const url = uber.getAuthorizeUrl(['history','profile', 'request', 'places']);
+    const url = uber.getAuthorizeUrl(['history','profile', 'request', 'places', 'all_trips', 'request']);
     res.redirect(url);
 })
 
