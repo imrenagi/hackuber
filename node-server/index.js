@@ -9,6 +9,7 @@ app.get('/api', (req, res)=>{
     res.send('API works')
 })
 
+
 app.get('/api/sms', (req, res)=>{
     const receiver_num = req.query.number;
     const receiver_name = req.query.name;
