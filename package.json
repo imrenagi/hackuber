@@ -26,8 +26,10 @@
     "babel-preset-env": "^1.2.0",
     "babel-watch": "^2.0.6",
     "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
     "express": "^4.15.0",
     "node-uber": "^0.9.7",
+    "path": "^0.12.7",
     "twilio": "^2.11.1",
     "unirest": "^0.5.1"
   }
