@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 import express from 'express';
 const app = express();
 const twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
