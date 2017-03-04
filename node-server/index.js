@@ -9,7 +9,6 @@ import unirest from 'unirest';
 app.get('/', (req, res)=>res.send('use endpoint/api'))
 let DB = {};
 
-let DB = {};
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.get('/api', (req, res)=>{
