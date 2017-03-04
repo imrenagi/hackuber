@@ -7,6 +7,7 @@ import Uber from 'node-uber';
 import unirest from 'unirest';
 
 app.get('/', (req, res)=>res.send('use endpoint/api'))
+let DB = {};
 
 let DB = {};
 app.set('views', path.join(__dirname, 'views'));
@@ -30,6 +31,18 @@ app.get('/api/sms', (req, res)=>{
         console.log(`send message to ${receiver_num}`)
         res.status(200).send('message sent')
     })
+})
+
+app.get('/api/success', (req, res) => {
+    DB.usercode = req.query.code;
+    console.log('DB:', DB);
+    res.send({success: true})
+})
+
+app.post('/api/success', (req, res) => {
+    DB.usercode = req.query.code;
+    console.log('DB:', DB);
+    res.send({success: true})
 })
 
 const uber = new Uber({
