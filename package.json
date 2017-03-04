@@ -27,6 +27,7 @@
     "babel-watch": "^2.0.6",
     "dotenv": "^4.0.0",
     "express": "^4.15.0",
+    "node-uber": "^0.9.7",
     "twilio": "^2.11.1"
   }
 }
