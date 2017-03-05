@@ -88,7 +88,7 @@ app.get('/api/profile', (req, res) => {
 
 app.post('/api/webhook', (req, res) => {
     console.log('webhook');
-    const receiver_num = req.query.number || '14152035874';
+    const receiver_num = req.query.number || '14084313552';
     const receiver_name = req.query.name || 'Amazingandyyy';
     twilio.sendMessage({
         to: receiver_num,

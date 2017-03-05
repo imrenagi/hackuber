@@ -1,5 +1,5 @@
 # Paste your access token in the quotes below
-access_token="vhIawbyV0MeSeBj8AMdRa7FR5opu5s"
+access_token="Q9dieOQ795jjucViA5ytszll6IAfnH"
 
 function change_status {
     curl -X "PUT" "https://sandbox-api.uber.com/v1/sandbox/requests/$2" \
@@ -16,9 +16,9 @@ options=(
     "processing" 
     "no_drivers_available" 
     "accepted" 
-    "arriving" 
+    "arriving"
     "in_progress" 
-    "driver_canceled" 
+    "driver_canceled"
     "rider_canceled"
     "completed"
     "exit")
